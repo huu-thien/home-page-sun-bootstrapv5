@@ -1,0 +1,45 @@
+.header {
+  box-shadow: 0 0 10px 0 rgba(204, 204, 204, 0.5);
+  .header-container {
+    height: 100px;
+    .header--logo {
+      img {
+        width: 100px;
+      }
+    }
+    transition: all 0.7s ease-in-out;
+    .nav-item {
+      .nav-link {
+        color: $secondary-color;
+        border-top: 4px solid transparent;
+        &:hover {
+          border-top: 4px solid $primary-color;
+        }
+      }
+    }
+    .header--setting__active {
+      border-color: $primary-color;
+    }
+    .header--menu-sm {
+      display: none;
+      .menu-item-mobile {
+        color: $secondary-color;
+        transition: all 0.2s ease-in-out;
+        &:hover {
+          background-color: $primary-color;
+          color: $white--color;
+        }
+      }
+    }
+  }
+}
+.header-container {
+  @include MobileScreen(992px) {
+    .header--menu {
+      display: none;
+    }
+    .header--menu-sm {
+      display: block !important;
+    }
+  }
+}

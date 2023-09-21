@@ -1,0 +1,22 @@
+
+.footer {
+  background-color: #f7f7f7;;
+  .footer-card {
+      img {
+        width: 150px;
+        padding: 30px 0;
+      }
+  }
+}
+.footer-card {
+  @include TabletScreen(992px) {
+    .flex-mobile {
+      display: flex !important;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: column;
+      text-align: center;
+    }
+    
+  }
+}

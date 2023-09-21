@@ -1,0 +1,21 @@
+.project--dsc {
+  padding: 30px;
+  .quantity {
+    padding-bottom: 50px;
+    font-size: 6rem;
+    font-weight: bold;
+    color: $primary-color;
+    position: relative;
+    span {
+      
+      position: absolute;
+      top: -20px;
+    }
+    p {
+      color: $secondary-color;
+      display: inline;
+      font-weight: 500;
+      font-size: 2rem;
+    }
+  }
+}

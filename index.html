@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap"
+      rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKlghei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="./public/css/style.css" />
+    <title>Sun* Clone using Bootstrap</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header fixed-top bg-white">
+      <div
+        class="container d-flex align-items-center justify-content-between header-container">
+        <span class="header--logo">
+          <img src="./assets/images/logo-sun.png" alt="Logo-Sun" />
+        </span>
+        <ul class="header--menu nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#introduce">About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#career">Career opportunities</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#evironment">Work environment</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#culture">Culture - Events</a>
+          </li>
+        </ul>
+        <div class="header--menu-sm">
+          <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
+            Open menu
+          </button>
+          <div class="offcanvas offcanvas-start" id="demo">
+            <div class="offcanvas-header">
+              <h1 class="offcanvas-title">Menu</h1>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body">
+              <a class="menu-item-mobile d-block py-4 border-bottom px-5" href="#">Home</a>
+              <a class="menu-item-mobile d-block py-4 border-bottom px-5" href="#introduce">About us</a>
+              <a class="menu-item-mobile d-block py-4 border-bottom px-5" href="#career">Career opportunities</a>
+              <a class="menu-item-mobile d-block py-4 border-bottom px-5" href="#evironment">Work environment</a>
+              <a class="menu-item-mobile d-block py-4 border-bottom px-5" href="#culture">Culture - Events</a>
+            </div>
+          </div>
+        </div>
+        <div class="header--setting">
+          <span class="header--setting__active p-2 border rounded">VI</span>
+          <span class="header--setting__not-active p-2">EN</span>
+        </div>
+      </div>
+    </header>
+    <!-- Section video introduce -->
+    <section class="section section--introduce my-5" id="introduce">
+      <video
+        src="./assets/videos/mv-pc.mp4"
+        class="w-100"
+        autoplay
+        loop
+        muted></video>
+    </section>
+    <div class="container">
+      <!-- Section Business Area -->
+      <section class="section section--business py-5" id="business">
+        <h2 class="h1 fw-bold pb-4">Our Business</h2>
+        <div
+          class="business--block d-lg-flex justify-content-between align-items-center border rounded p-5 shadow-sm">
+          <div class="business--block__dsc">
+            <p class="lh-base">
+              As a Digital Creative Studio, Sun* always prioritize the spirit of
+              owning the products, thinking creatively in any project to bring
+              the most <strong>"awesome"</strong> experience to end-users. With
+              two service lines namely
+              <strong>"Creative & Engineering"</strong> and
+              <strong>"Talent Platform"</strong>, Sun* has always been step by
+              step with technology creating great value for society.
+            </p>
+          </div>
+          <img src="./assets/images/intro-business.png" alt="intro-business" class="w-100"/>
+        </div>
+        <div
+          class="business-list d-md-flex justify-content-between align-items-center pt-4 gap-5">
+          <div
+            class="business--item business-item__active border rounded-4 p-5 shadow-sm my-3">
+            <p class="fst-italic py-2">Digital Creative Studio</p>
+            <h3 class="h2 fw-bold">Creative <br />& Engineering</h3>
+            <p class="py-4 lh-base">
+              Abundant human resource specializing in technology, design and
+              business.
+            </p>
+            <button class="button-primary fs-5">
+              See more <i class="fa-regular fa-circle-right"></i>
+            </button>
+          </div>
+          <div class="business--item border rounded-4 p-5 shadow-sm my-3">
+            <p class="fst-italic py-2">Digital Creative Studio</p>
+            <h3 class="h2 fw-bold">Creative <br />& Engineering</h3>
+            <p class="py-4 lh-base">
+              Abundant human resource specializing in technology, design and
+              business.
+            </p>
+            <button class="button-secondary fs-5">
+              See more <i class="fa-regular fa-circle-right"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- Section Our Project -->
+      <section class="section section--project my-5" id="project">
+        <h2 class="h1 fw-bold pb-4">Our Project</h2>
+        <div
+          class="project--block d-md-flex justify-content-between align-items-center">
+          <div class="project--dsc">
+            <div class="quantity">
+              200
+              <span class="fs-1">++</span>
+              <p>Client</p>
+            </div>
+            <div class="quantity">
+              300
+              <span class="fs-1">++</span>
+              <p>Supported Services</p>
+            </div>
+            <button class="button-secondary">
+              See more <i class="fa-regular fa-circle-right"></i>
+            </button>
+          </div>
+          <div class="project--list">
+            <div class="project--item position-relative shadow rounded-2 mx-5">
+              <img
+                src="./assets/images/zenkigen_01.png"
+                alt="zenkigen_01"
+                class="opacity-50 w-100" />
+              <div class="project--item__dsc position-absolute bottom-0 p-4">
+                <p class="">Kurashicom Inc</p>
+                <h3 class="fw-bold">KURASHICOM Project</h3>
+                <p class="lh-base py-2">
+                  “HARUTAKA” allows companies and job seekers/ applicants to
+                  interview on the web or in video at any time, in any place.
+                </p>
+                <a href="#" class="button--detail"
+                  >See more <i class="fa-regular fa-circle-right"></i
+                ></a>
+              </div>
+            </div>
+            <!-- <div class="project--list__action">
+              <span></span>
+              <span></span>
+            </div> -->
+          </div>
+        </div>
+      </section>
+      <!-- Section Career opportunities -->
+      <section class="section section-career" id="career">
+        <div
+          class="section-career__background w-100 h-100 rounded-5 text-center">
+          <h4 class="text-white fw-bold py-5">Career</h4>
+          <h2 class="text-white pb-5">
+            Join us & MAKE AWESOME THINGS THAT MATTER.
+          </h2>
+          <p class="text-white fs-4 pb-5">
+            Sun* has always been looking for challenge-driven people to create
+            "awesome" values.
+          </p>
+          <button class="button-primary button-primary__sm fs-5 fw-bold">
+            Join Sun* <i class="fa-regular fa-circle-right"></i>
+          </button>
+        </div>
+      </section>
+      <!-- Section Work environment -->
+      <section class="section section-evironment py-5" id="evironment">
+        <h2 class="h1 fw-bold pb-4">Working environment</h2>
+        <div class="evironment--block d-md-flex align-items-center">
+          <ul class="rule-list">
+            <li class="rule-item d-flex align-items-center py-3">
+              <i class="fa-solid fa-check rounded-circle p-2 me-3"></i>
+              <p class="lh-base">
+                #Active Challenge: Actively create continuous challenges.
+              </p>
+            </li>
+            <li class="rule-item d-flex align-items-center py-3">
+              <i class="fa-solid fa-check rounded-circle p-2 me-3"></i>
+              <p class="lh-base">
+                #Active Learning: Learning within an organization encompasses
+                all essential components, including the Learning Environment,
+                Learning Opportunities, and Learning Capacity.
+              </p>
+            </li>
+            <li class="rule-item d-flex align-items-center py-3">
+              <i class="fa-solid fa-check rounded-circle p-2 me-3"></i>
+              <p class="lh-base">
+                #Active Joy: Thriving in a cultural environment focused on human
+                values and universal happiness.
+              </p>
+            </li>
+          </ul>
+          <div class="evironment--card">
+            <img
+              class="w-100"
+              src="./assets/images/human-centered.png"
+              alt="human-centered" />
+            <button class="button-secondary">
+              See Details <i class="fa-regular fa-circle-right"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- Section Culture - Events -->
+      <section class="section section--culture py-5" id="culture">
+        <h2 class="h1 fw-bold pb-4">Culture - Events</h2>
+        <div
+          class="culture--list d-md-flex align-items-center justify-content-between gap-4">
+          <div class="culture--item shadow p-2 rounded-3 my-3">
+            <img
+              src="./assets/images/culture1.webp"
+              class="w-100"
+              alt="culture" />
+            <h4 class="fs-6 fw-bold py-3">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            </h4>
+            <p class="lh-base">
+              Asperiores, fuga? Sint sequi id harum distinctio quisquam ipsa
+              dolor esse expedita aut dignissimos excepturi, doloremque ullam!
+              Tempora cum in ipsum ullam.
+            </p>
+            <button class="button--detail">
+              See more <i class="fa-regular fa-circle-right"></i>
+            </button>
+          </div>
+          <div class="culture--item shadow p-2 rounded-3 my-3">
+            <img
+              src="./assets/images/culture1.webp"
+              class="w-100"
+              alt="culture" />
+            <h4 class="fs-6 fw-bold py-3">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            </h4>
+            <p class="lh-base">
+              Asperiores, fuga? Sint sequi id harum distinctio quisquam ipsa
+              dolor esse expedita aut dignissimos excepturi, doloremque ullam!
+              Tempora cum in ipsum ullam.
+            </p>
+            <button class="button--detail">
+              See more <i class="fa-regular fa-circle-right"></i>
+            </button>
+          </div>
+          <div class="culture--item shadow p-2 rounded-3 my-3">
+            <img
+              src="./assets/images/culture1.webp"
+              class="w-100"
+              alt="culture" />
+            <h4 class="fs-6 fw-bold py-3">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            </h4>
+            <p class="lh-base">
+              Asperiores, fuga? Sint sequi id harum distinctio quisquam ipsa
+              dolor esse expedita aut dignissimos excepturi, doloremque ullam!
+              Tempora cum in ipsum ullam.
+            </p>
+            <button class="button--detail">
+              See more <i class="fa-regular fa-circle-right"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-card container py-5  ">
+        <div class="row flex-mobile">
+          <div class="col-lg-3">
+            <img src="./assets/images/logo-sun.png" class=" mw-100 mx-auto" alt="logo" />
+          </div>
+          <div class="footer-contact col-lg-3 py-3">
+            <h5>Contact Us</h5>
+            <p>Phone: 84-24-3795-5417</p>
+            <p>Email: hr@sun-asterisk.com</p>
+          </div>
+          <div class="footer--news col-lg-3 py-3">
+            <h5>Updated News</h5>
+            <p>Culture - Events</p>
+            <p>Recruitment</p>
+            <p>Benefits and perks</p>
+          </div>
+          <div class="footer--news col-lg-3 py-3">
+            <h5>Updated News</h5>
+            <p>Culture - Events</p>
+            <p>Recruitment</p>
+            <p>Benefits and perks</p>
+          </div>
+        </div>
+        <div class="row flex-mobile">
+          <div class="col-lg-3 py-3"></div>
+          <div class="footer--news col-lg-3 py-3">
+            <h5>Updated News</h5>
+            <p>Culture - Events</p>
+            <p>Recruitment</p>
+            <p>Benefits and perks</p>
+          </div>
+          <div class="footer-office col-lg-6">
+            <h5>Office</h5>
+            <p>
+              T13, Keangnam Hanoi Landmark Tower, Pham Hung, Nam Tu Liem, Hanoi
+            </p>
+            <p class="lh-base">
+              4F, FHome Building, 16 Ly Thuong Kiet Str., Hai Chau district, Da
+              Nang
+            </p>
+            <p class="lh-base">
+              9th Floor, L'Mak Long Tower, 101-103 Nguyen Cuu Van, Ward 17, Binh
+              Thanh District
+            </p class="lh-base">
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

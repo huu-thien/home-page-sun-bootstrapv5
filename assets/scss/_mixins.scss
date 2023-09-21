@@ -1,0 +1,10 @@
+@mixin TabletScreen($type) {
+  @media screen and (max-width: $type) {
+    @content;
+  }
+}
+@mixin MobileScreen($type) {
+  @media screen and (max-width: $type) {
+    @content;
+  }
+}

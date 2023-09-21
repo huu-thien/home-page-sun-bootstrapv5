@@ -1,0 +1,40 @@
+.section-career {
+  margin-top: 60px;
+  background-image: url("https://sun-asterisk.vn/wp-content/uploads/2020/11/career-bg.jpg");
+  height: 600px;
+  border-radius: 20px;
+  &__background {
+    background-color: rgba(192,17,17, 0.9);
+    h4 {
+      font-size: 4rem;
+    }
+    .button-primary__sm {
+      width: 30%;
+    }
+  }
+}
+.section-career {
+  @include MobileScreen(768px) {
+    .button-primary__sm {
+      width: 90%;
+    }
+    h4 {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: $white--color;
+    }
+    .section--title {
+      font-size: 1.6rem;
+      color: $white--color;
+    }
+    p{
+      line-height: 1.6;
+      font-size: 1.2rem !important;
+      color: $white--color;
+    }
+    .button-primary__sm {
+      width: 90%;
+    }
+  }
+}
+

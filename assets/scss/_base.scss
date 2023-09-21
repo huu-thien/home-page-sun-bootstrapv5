@@ -1,0 +1,86 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+  // overflow-x: hidden;
+}
+img,
+picture,
+svg,
+video {
+  display: block;
+  // max-width: 100%;
+}
+input,
+select,
+textarea {
+  background-color: transparent;
+  outline: none;
+}
+button {
+  cursor: pointer;
+  background-color: transparent;
+  outline: none;
+  border: 0;
+}
+body {
+  min-height: 100vh;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1;
+}
+a {
+  text-decoration: none;
+}
+.button-basic {
+  width: 100%;
+  padding: 30px 0px;
+  border-radius: 12px;
+  i {
+    margin-left: 12px;
+  }
+}
+.button-primary {
+  background-color: $white--color;
+  color: $primary-color;
+  @extend .button-basic
+}
+.button-primary {
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    background-color: $secondary-color;
+    color: $white--color;
+  }
+}
+.button-secondary {
+  background-color: $secondary-color;
+  color: $white--color;
+  @extend .button-basic
+}
+.button-secondary {
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    background-color: $primary-color;
+    color: $white--color;
+  }
+}
+.button--detail {
+  color: $primary-color;
+  padding: 10px 20px;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  transition: all 0.2s ease-in-out;
+  i {
+    margin-left: 6px;
+  }
+  &:hover {
+    border: 1px solid $primary-color;
+  }
+}

@@ -1,0 +1,229 @@
+/* Variable */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+img,
+picture,
+svg,
+video {
+  display: block;
+}
+
+input,
+select,
+textarea {
+  background-color: transparent;
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+  background-color: transparent;
+  outline: none;
+  border: 0;
+}
+
+body {
+  min-height: 100vh;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1;
+}
+
+a {
+  text-decoration: none;
+}
+
+.button-basic, .button-secondary, .button-primary {
+  width: 100%;
+  padding: 30px 0px;
+  border-radius: 12px;
+}
+.button-basic i, .button-secondary i, .button-primary i {
+  margin-left: 12px;
+}
+
+.button-primary {
+  background-color: #ffffff;
+  color: #c01111;
+}
+
+.button-primary {
+  transition: all 0.2s ease-in-out;
+}
+.button-primary:hover {
+  background-color: #2b3441;
+  color: #ffffff;
+}
+
+.button-secondary {
+  background-color: #2b3441;
+  color: #ffffff;
+}
+
+.button-secondary {
+  transition: all 0.2s ease-in-out;
+}
+.button-secondary:hover {
+  background-color: #c01111;
+  color: #ffffff;
+}
+
+.button--detail {
+  color: #c01111;
+  padding: 10px 20px;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  transition: all 0.2s ease-in-out;
+}
+.button--detail i {
+  margin-left: 6px;
+}
+.button--detail:hover {
+  border: 1px solid #c01111;
+}
+
+.header {
+  box-shadow: 0 0 10px 0 rgba(204, 204, 204, 0.5);
+}
+.header .header-container {
+  height: 100px;
+  transition: all 0.7s ease-in-out;
+}
+.header .header-container .header--logo img {
+  width: 100px;
+}
+.header .header-container .nav-item .nav-link {
+  color: #2b3441;
+  border-top: 4px solid transparent;
+}
+.header .header-container .nav-item .nav-link:hover {
+  border-top: 4px solid #c01111;
+}
+.header .header-container .header--setting__active {
+  border-color: #c01111;
+}
+.header .header-container .header--menu-sm {
+  display: none;
+}
+.header .header-container .header--menu-sm .menu-item-mobile {
+  color: #2b3441;
+  transition: all 0.2s ease-in-out;
+}
+.header .header-container .header--menu-sm .menu-item-mobile:hover {
+  background-color: #c01111;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 992px) {
+  .header-container .header--menu {
+    display: none;
+  }
+  .header-container .header--menu-sm {
+    display: block !important;
+  }
+}
+
+.business-list .business-item__active {
+  background-color: #c01111;
+  color: #ffffff;
+}
+
+.project--dsc {
+  padding: 30px;
+}
+.project--dsc .quantity {
+  padding-bottom: 50px;
+  font-size: 6rem;
+  font-weight: bold;
+  color: #c01111;
+  position: relative;
+}
+.project--dsc .quantity span {
+  position: absolute;
+  top: -20px;
+}
+.project--dsc .quantity p {
+  color: #2b3441;
+  display: inline;
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+.section-career {
+  margin-top: 60px;
+  background-image: url("https://sun-asterisk.vn/wp-content/uploads/2020/11/career-bg.jpg");
+  height: 600px;
+  border-radius: 20px;
+}
+.section-career__background {
+  background-color: rgba(192, 17, 17, 0.9);
+}
+.section-career__background h4 {
+  font-size: 4rem;
+}
+.section-career__background .button-primary__sm {
+  width: 30%;
+}
+
+@media screen and (max-width: 768px) {
+  .section-career .button-primary__sm {
+    width: 90%;
+  }
+  .section-career h4 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ffffff;
+  }
+  .section-career .section--title {
+    font-size: 1.6rem;
+    color: #ffffff;
+  }
+  .section-career p {
+    line-height: 1.6;
+    font-size: 1.2rem !important;
+    color: #ffffff;
+  }
+  .section-career .button-primary__sm {
+    width: 90%;
+  }
+}
+
+.rule-list {
+  list-style-type: none;
+}
+.rule-list .rule-item i {
+  background-color: #c01111;
+  color: #ffffff;
+}
+
+.footer {
+  background-color: #f7f7f7;
+}
+.footer .footer-card img {
+  width: 150px;
+  padding: 30px 0;
+}
+
+@media screen and (max-width: 992px) {
+  .footer-card .flex-mobile {
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

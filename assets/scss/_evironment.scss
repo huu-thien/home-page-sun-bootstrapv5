@@ -1,0 +1,9 @@
+.rule-list {
+  list-style-type: none;
+  .rule-item {
+    i {
+      background-color: $primary-color;
+      color: $white--color;
+    }
+  }
+}
